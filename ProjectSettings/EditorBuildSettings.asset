@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Devs/mick/scenes/House 1.unity
     guid: a6d19b7d7f66a354fa42b2d5c217be4e
   - enabled: 0
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/main.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
