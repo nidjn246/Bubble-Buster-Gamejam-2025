@@ -1,47 +1,4 @@
-//using System.Runtime.CompilerServices;
-//using UnityEngine;
 
-//using UnityEngine.InputSystem;
-
-
-//public class PlayerController : MonoBehaviour
-//{
-//    public Rigidbody rb;
-//    public float moveSpeed = 5f;
-//    public InputAction playerControles;
-
-//    Vector3 moveDirection = Vector3.zero;
-//    private InputAction move;
-
-
-
-
-//    private void Awake()
-//    {
-//        playerControles = new InputAction();
-//    }
-
-//    private void OnEnable()
-//    {
-//        move = playerControles.player.Move;
-//        move.Enable();
-//    }
-
-//    private void OnDisable()
-//    {
-//        move.Disable(); ;
-//    }
-//    private void Update()
-//    {
-
-//        moveDirection = move.ReadValue<Vector3>();
-//    }
-
-//    private void FixedUpdate()
-//    {
-//        rb.linearVelocity = new Vector3(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-//    }
-//}
 
 using UnityEngine;
 
@@ -140,7 +97,7 @@ public class Player : MonoBehaviour
         float horizontalRotation = Input.GetAxis("Mouse X") * mouseSensitivity;
         transform.Rotate(0, horizontalRotation, 0);
 
-        verticalRotation += Input.GetAxis("Mouse Y") * mouseSensitivity;
+        verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
         verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
 
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
