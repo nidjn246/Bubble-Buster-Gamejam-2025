@@ -6,15 +6,19 @@ public class Gun : MonoBehaviour
    [SerializeField] private Rigidbody Bullet;
    [SerializeField] private GameObject FireLocation;
    [SerializeField] private float Speed;
+    private float cooldown;
     void Update()
-    {
+    { 
+        cooldown = cooldown - Time.deltaTime;
         if (Input.GetMouseButtonDown(0))
         {
+            if (cooldown <= 0)
+            {
             Rigidbody bulletclone;
-            Debug.Log("mouse clicked");
             bulletclone = Instantiate(Bullet, FireLocation.transform.position, FireLocation.transform.rotation);
             bulletclone.linearVelocity = transform.TransformDirection(Vector3.forward * 10);
-            Debug.Log("bullet spawned");
+            cooldown = 0.2f;
+            }
         }
     }
 }
