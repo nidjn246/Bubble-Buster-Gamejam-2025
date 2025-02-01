@@ -4,6 +4,7 @@ public class gunswap : MonoBehaviour
 {
     [SerializeField] private GameObject Pistol;
     [SerializeField] private GameObject Shotgun;
+    [SerializeField] private GameObject FakeShotgun;
     [SerializeField] private bool IsUsingPistol = true;
 
     private void Update()
@@ -12,12 +13,14 @@ public class gunswap : MonoBehaviour
         {
             Pistol.SetActive(true);
             Shotgun.SetActive(false);
+            FakeShotgun.SetActive(true);
         }
 
         if (IsUsingPistol == false)
         {
             Pistol.SetActive(false);
             Shotgun.SetActive(true);
+            FakeShotgun.SetActive(false);
         }
         if (Input.GetKeyUp(KeyCode.Q))
         {

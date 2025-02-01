@@ -2363,6 +2363,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e053b8803befb428207f8295bafce7, type: 3}
+--- !u!1 &773552922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 590166387517213641, guid: 823dfe41f701fa64a9f7563b2c0ca580, type: 3}
+  m_PrefabInstance: {fileID: 385849471541728835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &796286400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3787,7 +3792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3965231157899971410, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4034039142016919878, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3797,6 +3802,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5436995387283133551, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: FakeShotgun
+      value: 
+      objectReference: {fileID: 773552922}
     - target: {fileID: 5629474969998303861, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
