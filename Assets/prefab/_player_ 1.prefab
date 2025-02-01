@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 2
   MoveSpeed: 5
-  jumpForce: 10
+  jumpForce: 0
   fallMultiplier: 2.5
   ascendMultiplier: 2
   groundLayer:

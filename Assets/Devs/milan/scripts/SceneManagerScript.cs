@@ -26,9 +26,9 @@ public class SceneManagerScript : MonoBehaviour
 
         if (cleaneditems > 57)
         {
-                DontDestroyOnLoad(gameObject);
-                bgmusic = GetComponent<AudioSource>();
-                bgmusic.Play();
+                //DontDestroyOnLoad(gameObject);
+                //bgmusic = GetComponent<AudioSource>();
+                //bgmusic.Play();
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(nextSceneIndex);         
         }
@@ -40,9 +40,9 @@ public class SceneManagerScript : MonoBehaviour
 
             if (cleaneditems > 55)
             {
-                bgmusic = GetComponent<AudioSource>();
-                bgmusic.Play();
-                DontDestroyOnLoad(gameObject);
+                //bgmusic = GetComponent<AudioSource>();
+                //bgmusic.Play();
+                //DontDestroyOnLoad(gameObject);
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
             }
@@ -53,13 +53,13 @@ public class SceneManagerScript : MonoBehaviour
 
             if (cleaneditems > 49)
             {
-                bgmusic = GetComponent<AudioSource>();
-                bgmusic.Play();
-                DontDestroyOnLoad(gameObject);
+                //bgmusic = GetComponent<AudioSource>();
+                //bgmusic.Play();
+                //DontDestroyOnLoad(gameObject);
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                //Cursor.lockState = CursorLockMode.None;
+                //Cursor.visible = true;
             }
 
         }
