@@ -48,6 +48,8 @@ public class SceneManagerScript : MonoBehaviour
             { 
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
 
         }
