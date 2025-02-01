@@ -25,6 +25,7 @@ public class MaterialChanger : MonoBehaviour
 
         else if (howdirty == 0)
         {
+           FindAnyObjectByType<SceneManagerScript>().cleaneditems++;
            Destroy(gameObject);
         }
     }

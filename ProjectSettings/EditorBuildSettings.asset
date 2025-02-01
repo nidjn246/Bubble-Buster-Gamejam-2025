@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Devs/mick/scenes/House 1.unity
-    guid: a6d19b7d7f66a354fa42b2d5c217be4e
-  - enabled: 0
-    path: Assets/Scenes/Main.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/initialize.unity
+    guid: 2659d86604bced34a81426dcef9035c1
+  - enabled: 1
+    path: Assets/Scenes/main menu.unity
+    guid: 65330fc50c8392541b10d6ed959f4e6c
+  - enabled: 1
+    path: Assets/Scenes/House 1.unity
+    guid: 78380095b5f61e5468c1b6ebcaf21108
+  - enabled: 1
+    path: Assets/Scenes/House 2.unity
+    guid: e883b3b7f7f22d24e9819750bba8202e
+  - enabled: 1
+    path: Assets/Scenes/House 3.unity
+    guid: 57ba1e7a5efc41d468f0a46e0156c254
+  - enabled: 1
+    path: Assets/Scenes/end.unity
+    guid: 36e1f183aec63af42b56fac4b905e6c6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
