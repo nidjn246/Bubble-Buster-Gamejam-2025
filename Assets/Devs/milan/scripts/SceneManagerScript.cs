@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 public class SceneManagerScript : MonoBehaviour
 {
     [SerializeField] public int cleaneditems = 0;
+    private AudioSource bgmusic;
     public void StartGame()
     {
         cleaneditems = 0;
@@ -25,7 +26,10 @@ public class SceneManagerScript : MonoBehaviour
 
         if (cleaneditems > 57)
         {
-            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+                DontDestroyOnLoad(gameObject);
+                bgmusic = GetComponent<AudioSource>();
+                bgmusic.Play();
+                int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadScene(nextSceneIndex);         
         }
 
@@ -36,6 +40,9 @@ public class SceneManagerScript : MonoBehaviour
 
             if (cleaneditems > 55)
             {
+                bgmusic = GetComponent<AudioSource>();
+                bgmusic.Play();
+                DontDestroyOnLoad(gameObject);
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
             }
@@ -45,7 +52,10 @@ public class SceneManagerScript : MonoBehaviour
         {
 
             if (cleaneditems > 49)
-            { 
+            {
+                bgmusic = GetComponent<AudioSource>();
+                bgmusic.Play();
+                DontDestroyOnLoad(gameObject);
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
             }
