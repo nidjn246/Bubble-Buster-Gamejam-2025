@@ -58,6 +58,8 @@ public class SceneManagerScript : MonoBehaviour
                 DontDestroyOnLoad(gameObject);
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
 
         }
