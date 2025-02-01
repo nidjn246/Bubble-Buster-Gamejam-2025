@@ -8,6 +8,10 @@ public class SceneManagerScript : MonoBehaviour
         cleaneditems = 0;
         SceneManager.LoadScene("House 1");
     }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("main menu");
+    }
 
     public void QuitGame()
     {
@@ -30,12 +34,23 @@ public class SceneManagerScript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
 
-            if (cleaneditems > 56)
+            if (cleaneditems > 55)
             {
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
             }
 
         }
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+
+            if (cleaneditems > -1)
+            {
+                int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+                SceneManager.LoadScene(nextSceneIndex);
+            }
+
+        }
+
     }
 }
