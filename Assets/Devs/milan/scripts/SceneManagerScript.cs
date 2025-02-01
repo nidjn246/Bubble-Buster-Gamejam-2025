@@ -6,7 +6,7 @@ public class SceneManagerScript : MonoBehaviour
     public void StartGame()
     {
         cleaneditems = 0;
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("House 1");
     }
 
     public void QuitGame()
@@ -30,7 +30,7 @@ public class SceneManagerScript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
 
-            if (cleaneditems > 34)
+            if (cleaneditems > 56)
             {
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
