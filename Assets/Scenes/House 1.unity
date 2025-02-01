@@ -2019,7 +2019,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You need to clean the house to get to the next level!
+  m_text: 'You need to clean the house to get to the next level!
+
+
+    Press Q to
+    switch weapons'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -3697,14 +3701,50 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 386715263173616461, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: shotgun
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1446111451389552002, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 287d35e2d5261f34e95f80eef76a9c25, type: 2}
+    - target: {fileID: 1985012955229247201, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: Speed
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2352621101283747567, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7db06959595c6bf40a81af289361d6ee, type: 2}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.282
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443355013006850369, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 3832815434549666782, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.487
@@ -3740,6 +3780,14 @@ PrefabInstance:
     - target: {fileID: 3832815434549666782, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.238
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965231157899971410, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502251592749676900, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5629474969998303861, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -3802,7 +3850,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2630825148246467579, guid: 1fad017960755d144a377f5f59642d2f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fad017960755d144a377f5f59642d2f, type: 3}

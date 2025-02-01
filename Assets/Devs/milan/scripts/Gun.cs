@@ -5,7 +5,6 @@ public class Gun : MonoBehaviour
 {
    [SerializeField] private Rigidbody Bullet;
    [SerializeField] private GameObject FireLocation;
-   [SerializeField] private float Speed;
     private float cooldown;
     void Update()
     { 
