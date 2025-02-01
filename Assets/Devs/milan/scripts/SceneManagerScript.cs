@@ -20,7 +20,7 @@ public class SceneManagerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
 
         if (cleaneditems > 57)
@@ -31,7 +31,7 @@ public class SceneManagerScript : MonoBehaviour
 
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
 
             if (cleaneditems > 55)
@@ -41,11 +41,11 @@ public class SceneManagerScript : MonoBehaviour
             }
 
         }
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
 
-            if (cleaneditems > -1)
-            {
+            if (cleaneditems > 49)
+            { 
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
             }
